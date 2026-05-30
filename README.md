@@ -1,10 +1,11 @@
-# Lucid-SRD 販売サイト
+# SARTI-SRD 販売サイト
 
-Sony Spatial Reality Display (ELF-SR2) 向けの医療用3D可視化アプリケーション「Lucid-SRD」の公式販売サイトです。
+Sony Spatial Reality Display (ELF-SR2) 向けの医療用3D可視化アプリケーション「SARTI-SRD」(サートアイエスアールディ) の公式販売サイトです。
 
 ## プロジェクト概要
 
-- **製品名**: Lucid-SRD
+- **会社名**: SART Soft
+- **製品名**: SARTI-SRD
 - **目的**: 医療用3D可視化ソリューションの販売・プロモーション
 - **技術スタック**: HTML5 + Tailwind CSS (CDN) + Vanilla JavaScript
 
@@ -85,14 +86,14 @@ echo ".claude/" >> .gitignore
 git add .
 
 # 初回コミット
-git commit -m "Initial commit: Lucid-SRD販売サイト"
+git commit -m "Initial commit: SARTI-SRD販売サイト"
 ```
 
 #### 2. GitHubにプッシュ
 
 ```bash
 # GitHubで新しいリポジトリを作成してから以下を実行
-git remote add origin https://github.com/YOUR_USERNAME/lucid-srd-website.git
+git remote add origin https://github.com/YOUR_USERNAME/sarti-srd-website.git
 git branch -M main
 git push -u origin main
 ```
@@ -102,7 +103,7 @@ git push -u origin main
 1. **Netlifyにログイン**: https://app.netlify.com/
 2. **「Add new site」→「Import an existing project」**をクリック
 3. **GitHubを選択**してリポジトリを連携
-4. **「lucid-srd-website」リポジトリ**を選択
+4. **「sarti-srd-website」リポジトリ**を選択
 5. **ビルド設定**:
    - Build command: （空欄のまま）
    - Publish directory: （空欄のまま）または `.`
@@ -190,4 +191,4 @@ HTMLファイルを編集して、Gitにプッシュ。Netlifyが自動的に再
 
 ## ライセンス
 
-© 2025 Lucid-SRD. All rights reserved.
+© 2025 SART Soft. All rights reserved.

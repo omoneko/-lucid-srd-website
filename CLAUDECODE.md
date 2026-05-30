@@ -1,8 +1,8 @@
-# Lucid-SRD 販売サイト 開発仕様書
+# SARTI-SRD 販売サイト 開発仕様書
 
 ## プロジェクト概要
 
-**Lucid-SRD**は、Sony Spatial Reality Display (ELF-SR2) 向けの医療用3D可視化アプリケーションです。
+**SARTI-SRD**は、Sony Spatial Reality Display (ELF-SR2) 向けの医療用3D可視化アプリケーションです。
 顎顔面外科手術の術前計画支援、DICOMデータの3D可視化、脳血管3Dモデルの可視化を実現します。
 医療・研究機関（外科医、研究者、教育機関）をターゲットとしたB2B向けのプロフェッショナルな販売サイトを構築します。
 
@@ -541,7 +541,7 @@ project/
       
       <!-- 製品情報 -->
       <div>
-        <h3 class="text-lg font-semibold mb-4">Lucid-SRD</h3>
+        <h3 class="text-lg font-semibold mb-4">SARTI-SRD</h3>
         <p class="text-gray-400 text-sm">
           空間再現ディスプレイを、臨床現場へ。<br>
           医療用3D可視化ソリューション
@@ -562,8 +562,7 @@ project/
       <div>
         <h3 class="text-lg font-semibold mb-4">運営者情報</h3>
         <p class="text-gray-400 text-sm">
-          岡山大学病院<br>
-          口腔顎顔面外科<br>
+          SART Soft<br>
           〒700-8558<br>
           岡山県岡山市北区鹿田町2-5-1
         </p>
@@ -572,7 +571,7 @@ project/
     </div>
     
     <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-      <p>&copy; 2025 Lucid-SRD. All rights reserved.</p>
+      <p>&copy; 2025 SART Soft. All rights reserved.</p>
       <p class="mt-2">Sony Spatial Reality Display は Sony Corporation の商標です。</p>
     </div>
   </div>
@@ -593,21 +592,21 @@ project/
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- 基本SEO -->
-  <title>Lucid-SRD - Sony Spatial Reality Display対応 医療用3D可視化アプリケーション</title>
+  <title>SARTI-SRD - Sony Spatial Reality Display対応 医療用3D可視化アプリケーション</title>
   <meta name="description" content="立体を、ありのままに、快適に。空間再現ディスプレイ(ELF-SR2)で実現する医療用3D可視化ソリューション。顎顔面外科手術の術前計画、DICOM・STL・OBJ形式に対応。">
-  <meta name="keywords" content="Lucid-SRD,空間再現ディスプレイ,Sony Spatial Reality Display,ELF-SR2,医療3D,DICOM,手術計画,顎顔面外科,脳神経外科,3D可視化">
+  <meta name="keywords" content="SARTI-SRD,空間再現ディスプレイ,Sony Spatial Reality Display,ELF-SR2,医療3D,DICOM,手術計画,顎顔面外科,脳神経外科,3D可視化">
   
   <!-- OGP (SNSシェア用) -->
-  <meta property="og:title" content="Lucid-SRD - 医療用3D可視化アプリケーション">
+  <meta property="og:title" content="SARTI-SRD - 医療用3D可視化アプリケーション">
   <meta property="og:description" content="立体を、ありのままに、快適に。空間再現ディスプレイを、臨床現場へ。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://example.com/">
   <meta property="og:image" content="https://example.com/ogp-image.jpg">
-  <meta property="og:site_name" content="Lucid-SRD">
+  <meta property="og:site_name" content="SARTI-SRD">
   
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Lucid-SRD - 医療用3D可視化アプリケーション">
+  <meta name="twitter:title" content="SARTI-SRD - 医療用3D可視化アプリケーション">
   <meta name="twitter:description" content="立体を、ありのままに、快適に。">
   <meta name="twitter:image" content="https://example.com/twitter-image.jpg">
   
@@ -642,7 +641,7 @@ project/
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  "name": "Lucid-SRD",
+  "name": "SARTI-SRD",
   "description": "Sony Spatial Reality Display (ELF-SR2) 向けの医療用3D可視化アプリケーション。顎顔面外科手術の術前計画支援、DICOMデータの3D可視化に対応。",
   "applicationCategory": "MedicalApplication",
   "operatingSystem": "Windows 10, Windows 11",
@@ -655,7 +654,7 @@ project/
   },
   "provider": {
     "@type": "Organization",
-    "name": "岡山大学病院 口腔顎顔面外科",
+    "name": "SART Soft",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "鹿田町2-5-1",
@@ -822,7 +821,7 @@ window.addEventListener('scroll', () => {
 - [ ] お問い合わせフォームにプライバシーポリシーへのリンクがある
 
 **コンテンツ**:
-- [ ] 製品名「Lucid-SRD」が正しく表示されている
+- [ ] 製品名「SARTI-SRD」が正しく表示されている
 - [ ] 価格が正確に記載されている（¥400,000）
 - [ ] 対応ディスプレイ「Sony Spatial Reality Display (ELF-SR2)」が明記されている
 - [ ] お問い合わせメールアドレスが正しい
@@ -889,7 +888,7 @@ window.addEventListener('scroll', () => {
 **目的**: 電子商取引における消費者保護のための情報開示
 
 **必須記載事項**:
-1. 販売業者: 岡山大学病院 口腔顎顔面外科
+1. 販売業者: SART Soft
 2. 運営責任者: [要確認]
 3. 所在地: 〒700-8558 岡山県岡山市北区鹿田町2-5-1
 4. 連絡先: otuki.3104@gmail.com
@@ -936,7 +935,7 @@ window.addEventListener('scroll', () => {
 ## 備考
 
 ### 製品固有の情報
-- **製品名**: Lucid-SRD
+- **製品名**: SARTI-SRD
 - **価格**: シングルライセンス ¥400,000、サイトライセンス ¥1,200,000（税込）
 - **対応ディスプレイ**: Sony Spatial Reality Display (ELF-SR2)
 - **対応ファイル形式**: STL, OBJ, DICOM
@@ -962,6 +961,6 @@ window.addEventListener('scroll', () => {
 
 **Claude Codeでの実装開始コマンド例**:
 ```
-CLAUDECODE.mdの仕様に従って、Lucid-SRDの販売サイトを作成してください。
+CLAUDECODE.mdの仕様に従って、SARTI-SRDの販売サイトを作成してください。
 まずはindex.htmlから開始し、フェーズ1の基本構造を実装してください。
 ```

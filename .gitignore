@@ -6,6 +6,12 @@
 # Claude Code
 .claude/
 
+# OGP image backups
+*.old.jpg
+
+# Remember session files
+.remember/
+
 # Thumbnails
 ._*
 

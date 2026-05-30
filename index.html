@@ -5,23 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- 基本SEO -->
-  <title>Lucid-SRD - Sony Spatial Reality Display対応 医療用3D可視化アプリケーション</title>
+  <title>SARTI-SRD - Sony Spatial Reality Display対応 医療用3D可視化アプリケーション</title>
   <meta name="description" content="立体を、ありのままに、快適に。空間再現ディスプレイ(ELF-SR2)で実現する医療用3D可視化ソリューション。顎顔面外科手術の術前計画、DICOM・STL・OBJ形式に対応。">
-  <meta name="keywords" content="Lucid-SRD,空間再現ディスプレイ,Sony Spatial Reality Display,ELF-SR2,医療3D,DICOM,手術計画,顎顔面外科,脳神経外科,3D可視化">
+  <meta name="keywords" content="SARTI-SRD,空間再現ディスプレイ,Sony Spatial Reality Display,ELF-SR2,医療3D,DICOM,手術計画,顎顔面外科,脳神経外科,3D可視化">
 
   <!-- OGP (SNSシェア用) -->
-  <meta property="og:title" content="Lucid-SRD - 医療用3D可視化アプリケーション">
+  <meta property="og:title" content="SARTI-SRD - 医療用3D可視化アプリケーション">
   <meta property="og:description" content="立体を、ありのままに、快適に。空間再現ディスプレイを、臨床現場へ。">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://lucid-srd.netlify.app/">
-  <meta property="og:image" content="https://lucid-srd.netlify.app/assets/images/ogp-image.jpg">
-  <meta property="og:site_name" content="Lucid-SRD">
+  <meta property="og:url" content="https://sarti-srd.netlify.app/">
+  <meta property="og:image" content="https://sarti-srd.netlify.app/assets/images/ogp-image.jpg">
+  <meta property="og:site_name" content="SARTI-SRD">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Lucid-SRD - 医療用3D可視化アプリケーション">
+  <meta name="twitter:title" content="SARTI-SRD - 医療用3D可視化アプリケーション">
   <meta name="twitter:description" content="立体を、ありのままに、快適に。">
-  <meta name="twitter:image" content="https://lucid-srd.netlify.app/assets/images/twitter-image.jpg">
+  <meta name="twitter:image" content="https://sarti-srd.netlify.app/assets/images/twitter-image.jpg">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
@@ -50,7 +50,7 @@
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Lucid-SRD",
+    "name": "SARTI-SRD",
     "description": "Sony Spatial Reality Display (ELF-SR2) 向けの医療用3D可視化アプリケーション。顎顔面外科手術の術前計画支援、DICOMデータの3D可視化に対応。",
     "applicationCategory": "MedicalApplication",
     "operatingSystem": "Windows 10, Windows 11",
@@ -63,7 +63,7 @@
     },
     "provider": {
       "@type": "Organization",
-      "name": "岡山大学病院 口腔顎顔面外科 大月智史",
+      "name": "SART Soft",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "鹿田町2-5-1",
@@ -82,7 +82,7 @@
   <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" id="header">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
       <div class="text-2xl font-bold text-white">
-        Lucid-SRD
+        SARTI-SRD
       </div>
       <nav class="hidden md:flex space-x-6 text-white">
         <a href="#features" class="hover:text-blue-300 transition">特徴</a>
@@ -97,9 +97,19 @@
 
   <!-- 1. ヒーローセクション -->
   <section class="relative h-screen flex items-center justify-center overflow-hidden">
-    <!-- 背景画像 -->
+    <!-- 背景動画 -->
     <div class="absolute inset-0">
-      <img src="assets/images/hero-bg.jpg" alt="Lucid-SRD Hero Background" class="w-full h-full object-cover">
+      <video
+        class="w-full h-full object-cover"
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="assets/images/IMG_5855.JPG"
+        aria-label="SARTI-SRDを手術現場で使用している様子">
+        <source src="assets/videos/hero-or.mp4" type="video/mp4">
+        <img src="assets/images/IMG_5855.JPG" alt="SARTI-SRDを手術現場で使用している様子" class="w-full h-full object-cover">
+      </video>
     </div>
 
     <!-- 背景オーバーレイ -->
@@ -107,14 +117,17 @@
 
     <!-- コンテンツ -->
     <div class="relative z-10 text-center text-white px-4">
-      <h1 class="text-4xl md:text-6xl font-bold mb-6">
-        立体を、ありのままに、快適に
+      <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+        あなたはまだ<br class="sm:hidden">本当の3Dを知らない。
       </h1>
-      <h2 class="text-xl md:text-2xl mb-8 text-blue-100">
+      <p class="text-2xl md:text-3xl font-semibold mb-4 text-blue-100">
+        立体を、ありのままに、快適に。
+      </p>
+      <h2 class="text-lg md:text-xl mb-8 text-blue-100">
         空間再現ディスプレイを、臨床現場へ。
       </h2>
-      <p class="text-lg md:text-xl mb-12 max-w-3xl mx-auto text-blue-50">
-        Lucid-SRDは、Sony Spatial Reality Display向けの<br class="hidden sm:inline">医療用3D可視化ソリューションです。<br>
+      <p class="text-base md:text-lg mb-12 max-w-3xl mx-auto text-blue-50">
+        SARTI-SRDは、Sony Spatial Reality Display向けの<br class="hidden sm:inline">医療用3D可視化ソリューションです。<br>
         顎顔面外科手術の術前計画支援、DICOMデータの3D可視化を実現します。
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -139,7 +152,7 @@
   <section class="py-20 bg-gray-50" id="features">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">製品の特徴</h2>
-      <p class="text-center text-gray-600 mb-12 text-lg">Lucid-SRDが選ばれる3つの理由</p>
+      <p class="text-center text-gray-600 mb-12 text-lg">SARTI-SRDが選ばれる3つの理由</p>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
@@ -212,7 +225,7 @@
       </div>
 
       <!-- ユースケース3 -->
-      <div class="flex flex-col md:flex-row items-center gap-8">
+      <div class="flex flex-col md:flex-row items-center gap-8 mb-16">
         <div class="md:w-1/2">
           <img src="assets/images/use-case-3.jpg" alt="症例検討での活用" class="rounded-lg shadow-lg w-full h-auto" loading="lazy">
         </div>
@@ -223,6 +236,38 @@
           </p>
           <p class="text-gray-600">
             視野角の広い空間再現ディスプレイにより、快適に立体視を体験できます。
+          </p>
+        </div>
+      </div>
+
+      <!-- ユースケース4 -->
+      <div class="flex flex-col md:flex-row-reverse items-center gap-8 mb-16">
+        <div class="md:w-1/2">
+          <img src="assets/images/IMG_5855.JPG" alt="手術室でSARTI-SRDを傍に設置して使用している様子" class="rounded-lg shadow-lg w-full h-auto" loading="lazy">
+        </div>
+        <div class="md:w-1/2">
+          <h3 class="text-2xl font-semibold mb-4">実際の手術現場での活用</h3>
+          <p class="text-gray-600 mb-4">
+            手術室の術野脇に空間再現ディスプレイを設置し、術中にも患者固有の3Dモデルをリアルタイムに参照。複雑な解剖構造の確認や、術中の意思決定支援に活用できます。
+          </p>
+          <p class="text-gray-600">
+            清潔野を確保したまま、術者・助手・看護師が同時に同一の立体画像を共有可能。チーム全体での状況把握をサポートします。
+          </p>
+        </div>
+      </div>
+
+      <!-- ユースケース5 -->
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <div class="md:w-1/2">
+          <img src="assets/images/vascular-display.jpg" alt="空間再現ディスプレイに描出された頭頸部の動脈・静脈3D血管像" class="rounded-lg shadow-lg w-full h-auto" loading="lazy">
+        </div>
+        <div class="md:w-1/2">
+          <h3 class="text-2xl font-semibold mb-4">血管構造の3D可視化</h3>
+          <p class="text-gray-600 mb-4">
+            造影CTから抽出した動脈・静脈を、骨格との位置関係とともに立体表示。複雑に走行する血管網を、裸眼立体視で直感的に把握できます。
+          </p>
+          <p class="text-gray-600">
+            脳神経外科や頭頸部外科の術前計画において、血管の走行や狭窄部位、骨との距離を立体的に確認することで、より安全なアプローチの検討を支援します。
           </p>
         </div>
       </div>
@@ -567,7 +612,7 @@
 
         <!-- 製品情報 -->
         <div>
-          <h3 class="text-lg font-semibold mb-4">Lucid-SRD</h3>
+          <h3 class="text-lg font-semibold mb-4">SARTI-SRD</h3>
           <p class="text-gray-400 text-sm">
             空間再現ディスプレイを、臨床現場へ。<br>
             医療用3D可視化ソリューション
@@ -588,8 +633,7 @@
         <div>
           <h3 class="text-lg font-semibold mb-4">運営者情報</h3>
           <p class="text-gray-400 text-sm">
-            岡山大学病院<br>
-            口腔顎顔面外科<br>
+            SART Soft<br>
             〒700-8558<br>
             岡山県岡山市北区鹿田町2-5-1
           </p>
@@ -598,7 +642,7 @@
       </div>
 
       <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-        <p>&copy; 2025 Lucid-SRD. All rights reserved.</p>
+        <p>&copy; 2025 SART Soft. All rights reserved.</p>
         <p class="mt-2">Sony Spatial Reality Display は Sony Corporation の商標です。</p>
       </div>
     </div>
