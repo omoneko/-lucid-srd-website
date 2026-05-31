@@ -6,12 +6,12 @@
 
   <!-- 基本SEO -->
   <title>SARTI-SRD - Sony Spatial Reality Display対応 医療用3D可視化アプリケーション</title>
-  <meta name="description" content="立体を、ありのままに、快適に。空間再現ディスプレイ(ELF-SR2)で実現する医療用3D可視化ソリューション。顎顔面外科手術の術前計画、DICOM・STL・OBJ形式に対応。">
-  <meta name="keywords" content="SARTI-SRD,空間再現ディスプレイ,Sony Spatial Reality Display,ELF-SR2,医療3D,DICOM,手術計画,顎顔面外科,脳神経外科,3D可視化">
+  <meta name="description" content="立体を、ありのままに、快適に。Sony Spatial Reality Display で実現する医療用3D可視化ソリューション。STL/OBJ/PLY/DICOM に対応し、術前計画、術中の解剖確認、患者説明、教育、カンファレンスまで、3Dモデルを扱うあらゆる診療科でご活用いただけます。NubiaPad 3D 用の SARTI-3DPad も併せて開発中。">
+  <meta name="keywords" content="SARTI-SRD,SARTI-3DPad,空間再現ディスプレイ,Sony Spatial Reality Display,ELF-SR2,NubiaPad 3D,医療3D,DICOM,STL,OBJ,PLY,術前計画,術中ナビゲーション,患者説明,医学教育,カンファレンス,3D可視化">
 
   <!-- OGP (SNSシェア用) -->
   <meta property="og:title" content="SARTI-SRD - 医療用3D可視化アプリケーション">
-  <meta property="og:description" content="立体を、ありのままに、快適に。空間再現ディスプレイを、臨床現場へ。">
+  <meta property="og:description" content="立体を、ありのままに、快適に。STL/OBJ/PLY/DICOMに対応。術前計画、術中の解剖確認、患者説明、教育、カンファレンスまで、3Dモデルを扱うすべての診療科へ。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://sarti-srd.netlify.app/">
   <meta property="og:image" content="https://sarti-srd.netlify.app/assets/images/ogp-image.jpg">
@@ -51,7 +51,7 @@
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "SARTI-SRD",
-    "description": "Sony Spatial Reality Display (ELF-SR2) 向けの医療用3D可視化アプリケーション。顎顔面外科手術の術前計画支援、DICOMデータの3D可視化に対応。",
+    "description": "Sony Spatial Reality Display 向けの医療用3D可視化アプリケーション。STL/OBJ/PLY/DICOMに対応し、術前計画、術中の解剖確認、患者説明、医学教育、カンファレンスなど3Dモデルを扱うあらゆる場面で活用可能。",
     "applicationCategory": "MedicalApplication",
     "operatingSystem": "Windows 10, Windows 11",
     "softwareRequirements": "Sony Spatial Reality Display (ELF-SR2)",
@@ -80,27 +80,52 @@
 
   <!-- ヘッダー -->
   <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" id="header">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <div class="text-2xl font-bold text-white">
+    <div class="container mx-auto px-4 py-3 sm:py-4 flex justify-between items-center">
+      <a href="#" class="text-xl sm:text-2xl font-bold text-white">
         SARTI-SRD
-      </div>
-      <nav class="hidden md:flex space-x-6 text-white">
+      </a>
+      <nav class="hidden lg:flex space-x-5 xl:space-x-6 text-white text-sm xl:text-base">
         <a href="#features" class="hover:text-blue-300 transition">特徴</a>
         <a href="#use-cases" class="hover:text-blue-300 transition">活用シーン</a>
+        <a href="#sarti-3dpad" class="hover:text-blue-300 transition">SARTI-3DPad</a>
         <a href="#specs" class="hover:text-blue-300 transition">動作環境</a>
         <a href="#pricing" class="hover:text-blue-300 transition">購入</a>
         <a href="#faq" class="hover:text-blue-300 transition">FAQ</a>
         <a href="#contact" class="hover:text-blue-300 transition">お問い合わせ</a>
       </nav>
+      <button id="mobile-menu-toggle" class="lg:hidden text-white p-2" aria-label="メニューを開く" aria-expanded="false">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
     </div>
   </header>
 
+  <!-- モバイル/タブレット用ドロップダウンメニュー -->
+  <nav id="mobile-menu" class="hidden lg:hidden fixed top-14 sm:top-16 left-0 right-0 z-40 bg-white shadow-lg border-t border-gray-200 max-h-[calc(100vh-4rem)] overflow-y-auto">
+    <div class="container mx-auto px-4 py-2 flex flex-col">
+      <a href="#features" class="py-3 text-gray-800 border-b border-gray-100">特徴</a>
+      <a href="#use-cases" class="py-3 text-gray-800 border-b border-gray-100">活用シーン</a>
+      <a href="#sarti-3dpad" class="py-3 text-gray-800 border-b border-gray-100">SARTI-3DPad</a>
+      <a href="#specs" class="py-3 text-gray-800 border-b border-gray-100">動作環境</a>
+      <a href="#pricing" class="py-3 text-gray-800 border-b border-gray-100">購入</a>
+      <a href="#faq" class="py-3 text-gray-800 border-b border-gray-100">FAQ</a>
+      <a href="#contact" class="py-3 text-gray-800">お問い合わせ</a>
+    </div>
+  </nav>
+
   <!-- 1. ヒーローセクション -->
   <section class="relative h-screen flex items-center justify-center overflow-hidden">
-    <!-- 背景動画 -->
-    <div class="absolute inset-0">
+    <!-- 背景動画 (縦持ちでは見切れ防止のため object-contain、横持ち/PCでは object-cover) -->
+    <div class="absolute inset-0 bg-blue-950">
+      <!-- 縦持ち時の余白を埋めるブラー背景 -->
+      <img
+        src="assets/images/IMG_5855.JPG"
+        alt=""
+        aria-hidden="true"
+        class="absolute inset-0 w-full h-full object-cover scale-110 blur-2xl opacity-70 landscape:hidden">
       <video
-        class="w-full h-full object-cover"
+        class="relative w-full h-full landscape:object-cover portrait:object-contain"
         autoplay
         muted
         loop
@@ -116,25 +141,26 @@
     <div class="absolute inset-0 bg-gradient-to-br from-blue-900 to-blue-700 opacity-60"></div>
 
     <!-- コンテンツ -->
-    <div class="relative z-10 text-center text-white px-4">
-      <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+    <div class="relative z-10 text-center text-white px-4 sm:px-6 max-w-5xl">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight">
         あなたはまだ<br class="sm:hidden">本当の3Dを知らない。
       </h1>
-      <p class="text-2xl md:text-3xl font-semibold mb-4 text-blue-100">
+      <p class="text-xl sm:text-2xl md:text-3xl font-semibold mb-3 sm:mb-4 text-blue-100">
         立体を、ありのままに、快適に。
       </p>
-      <h2 class="text-lg md:text-xl mb-8 text-blue-100">
+      <h2 class="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 text-blue-100">
         空間再現ディスプレイを、臨床現場へ。
       </h2>
-      <p class="text-base md:text-lg mb-12 max-w-3xl mx-auto text-blue-50">
-        SARTI-SRDは、Sony Spatial Reality Display向けの<br class="hidden sm:inline">医療用3D可視化ソリューションです。<br>
-        顎顔面外科手術の術前計画支援、DICOMデータの3D可視化を実現します。
+      <p class="text-sm sm:text-base md:text-lg mb-8 sm:mb-12 max-w-3xl mx-auto text-blue-50 leading-relaxed">
+        SARTI-SRDは、Sony Spatial Reality Display 向けの<br class="hidden md:inline">医療用3D可視化ソリューションです。<br class="hidden sm:inline">
+        STL / OBJ / PLY / DICOM に対応し、術前計画から術中の解剖確認、<br class="hidden md:inline">
+        患者説明・教育・カンファレンスまで、<br class="hidden sm:inline">3Dモデルを扱うすべての診療科でご活用いただけます。
       </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="#features" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition shadow-lg">
+      <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+        <a href="#features" class="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition shadow-lg">
           詳しく見る
         </a>
-        <a href="#contact" class="bg-white hover:bg-gray-100 text-blue-900 px-8 py-4 rounded-lg text-lg font-semibold transition shadow-lg">
+        <a href="#contact" class="bg-white hover:bg-gray-100 text-blue-900 px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition shadow-lg">
           お問い合わせ
         </a>
       </div>
@@ -149,37 +175,64 @@
   </section>
 
   <!-- 2. 製品特徴セクション -->
-  <section class="py-20 bg-gray-50" id="features">
+  <section class="py-16 sm:py-20 bg-gray-50" id="features">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">製品の特徴</h2>
-      <p class="text-center text-gray-600 mb-12 text-lg">SARTI-SRDが選ばれる3つの理由</p>
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-3 sm:mb-4">製品の特徴</h2>
+      <p class="text-center text-gray-600 mb-10 sm:mb-12 text-base sm:text-lg">SARTI-SRD だからできる、6つの強み</p>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
 
-        <!-- 特徴1 -->
-        <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition">
-          <div class="text-5xl mb-4">📐</div>
-          <h3 class="text-xl font-semibold mb-3">多彩なファイル形式に対応</h3>
-          <p class="text-gray-600">
-            STL・OBJ・DICOMの主要な医療用ファイル形式に対応。既存のワークフローにシームレスに統合できます。
+        <!-- 特徴1: 対応データ形式 -->
+        <div class="bg-white p-6 sm:p-8 rounded-lg shadow-md hover:shadow-xl transition">
+          <div class="text-4xl sm:text-5xl mb-3 sm:mb-4">📐</div>
+          <h3 class="text-lg sm:text-xl font-semibold mb-2 sm:mb-3">幅広いデータ形式に対応</h3>
+          <p class="text-sm sm:text-base text-gray-600">
+            <strong>STL / OBJ / PLY / DICOM</strong> の主要な3D・医療用フォーマットを直接読み込み。セグメンテーション済みモデルもDICOMボリュームも、同じワークフローで扱えます。
           </p>
         </div>
 
-        <!-- 特徴2 -->
-        <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition">
-          <div class="text-5xl mb-4">⚡</div>
-          <h3 class="text-xl font-semibold mb-3">スピーディな操作性</h3>
-          <p class="text-gray-600">
-            少ない工程と最小限の待ち時間で、すぐに3D可視化を実現。臨床現場での迅速な判断をサポートします。
+        <!-- 特徴2: 複数オブジェクト同時表示 -->
+        <div class="bg-white p-6 sm:p-8 rounded-lg shadow-md hover:shadow-xl transition">
+          <div class="text-4xl sm:text-5xl mb-3 sm:mb-4">🧩</div>
+          <h3 class="text-lg sm:text-xl font-semibold mb-2 sm:mb-3">複数オブジェクトを同時表示</h3>
+          <p class="text-sm sm:text-base text-gray-600">
+            読み込めるオブジェクト数に<strong>制限なし</strong>。骨・血管・腫瘍・神経などを個別のレイヤーとして重ね合わせ、必要な構造だけを切り替えて観察できます。
           </p>
         </div>
 
-        <!-- 特徴3 -->
-        <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition">
-          <div class="text-5xl mb-4">🎮</div>
-          <h3 class="text-xl font-semibold mb-3">多様な操作方法</h3>
-          <p class="text-gray-600">
-            マウス、ゲームパッド、フリーハンド(ジェスチャー)での操作に対応。直感的で快適な操作環境を提供します。
+        <!-- 特徴3: カラー・透過度の調整 -->
+        <div class="bg-white p-6 sm:p-8 rounded-lg shadow-md hover:shadow-xl transition">
+          <div class="text-4xl sm:text-5xl mb-3 sm:mb-4">🎨</div>
+          <h3 class="text-lg sm:text-xl font-semibold mb-2 sm:mb-3">表示カラー・透過度の調整と保存</h3>
+          <p class="text-sm sm:text-base text-gray-600">
+            各オブジェクトの色と透過度を自由に調整して保存。配色を一度決めれば、次回起動時もそのまま再現でき、症例ごとの可視化スタイルを資産化できます。
+          </p>
+        </div>
+
+        <!-- 特徴4: 計測 -->
+        <div class="bg-white p-6 sm:p-8 rounded-lg shadow-md hover:shadow-xl transition">
+          <div class="text-4xl sm:text-5xl mb-3 sm:mb-4">📏</div>
+          <h3 class="text-lg sm:text-xl font-semibold mb-2 sm:mb-3">無制限の計測（長さ・角度）</h3>
+          <p class="text-sm sm:text-base text-gray-600">
+            オブジェクト表面に直接、<strong>長さと角度を無制限に計測</strong>。立体把握しながらの実測で、術前のサイズ決定や治療計画を強力にサポートします。
+          </p>
+        </div>
+
+        <!-- 特徴5: 視点保存 + 断面 -->
+        <div class="bg-white p-6 sm:p-8 rounded-lg shadow-md hover:shadow-xl transition">
+          <div class="text-4xl sm:text-5xl mb-3 sm:mb-4">🎯</div>
+          <h3 class="text-lg sm:text-xl font-semibold mb-2 sm:mb-3">視点と任意断面を自在に</h3>
+          <p class="text-sm sm:text-base text-gray-600">
+            「見る角度」を<strong>無制限に保存</strong>、ワンタップで再現。任意位置・角度の<strong>断面表示</strong>にも対応し、内部構造の確認と症例提示を一連の流れで行えます。
+          </p>
+        </div>
+
+        <!-- 特徴6: 操作方法 -->
+        <div class="bg-white p-6 sm:p-8 rounded-lg shadow-md hover:shadow-xl transition">
+          <div class="text-4xl sm:text-5xl mb-3 sm:mb-4">🖐️</div>
+          <h3 class="text-lg sm:text-xl font-semibold mb-2 sm:mb-3">3つの操作方法</h3>
+          <p class="text-sm sm:text-base text-gray-600">
+            <strong>マウス＋キーボード</strong> / <strong>ゲームコントローラー</strong> / <strong>ハンドジェスチャー（Webカメラ）</strong> に対応。デスクでも術野脇でも、最適な操作スタイルを選択できます。
           </p>
         </div>
 
@@ -188,86 +241,87 @@
   </section>
 
   <!-- 3. ユースケース・活用シーンセクション -->
-  <section class="py-20" id="use-cases">
+  <section class="py-16 sm:py-20" id="use-cases">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">活用シーン</h2>
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-3 sm:mb-4">活用シーン</h2>
+      <p class="text-center text-gray-600 mb-10 sm:mb-12 text-base sm:text-lg">3Dモデルを用いるすべての診療科で</p>
 
-      <!-- ユースケース1 -->
-      <div class="flex flex-col md:flex-row items-center gap-8 mb-16">
+      <!-- ユースケース1: 術前計画・手術シミュレーション -->
+      <div class="flex flex-col md:flex-row items-center gap-6 md:gap-8 mb-12 sm:mb-16">
         <div class="md:w-1/2">
-          <img src="assets/images/use-case-1.jpg" alt="顎変形症の手術シミュレーション" class="rounded-lg shadow-lg w-full h-auto" loading="lazy" decoding="async">
+          <img src="assets/images/use-case-1.jpg" alt="患者固有の3Dモデルによる術前計画" class="rounded-lg shadow-lg w-full h-auto" loading="lazy" decoding="async">
         </div>
         <div class="md:w-1/2">
-          <h3 class="text-2xl font-semibold mb-4">顎変形症の手術シミュレーション</h3>
-          <p class="text-gray-600 mb-4">
-            患者のCTデータから3Dモデルを作成し、術前計画を立体的に検討。空間再現ディスプレイの裸眼立体視により、骨格の位置関係を正確に把握できます。
+          <h3 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">術前計画・手術シミュレーション</h3>
+          <p class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
+            CT/MRIから抽出した3Dモデルを裸眼立体視で観察し、解剖の位置関係を正確に把握。骨切り・腫瘍切除・血管処理など、複雑な処置のシミュレーションを術前から立体的に検討できます。
           </p>
-          <p class="text-gray-600">
-            従来の2Dモニターでは理解しにくかった複雑な骨格構造を、実物大に近い感覚で観察することが可能です。
+          <p class="text-sm sm:text-base text-gray-600">
+            2Dモニタでは理解しにくかった構造を、実物大に近い感覚で観察可能。診療科を問わず、3Dモデルを扱う術前検討に有効です。
           </p>
         </div>
       </div>
 
-      <!-- ユースケース2 -->
-      <div class="flex flex-col md:flex-row-reverse items-center gap-8 mb-16">
+      <!-- ユースケース2: 患者説明・インフォームドコンセント -->
+      <div class="flex flex-col md:flex-row-reverse items-center gap-6 md:gap-8 mb-12 sm:mb-16">
         <div class="md:w-1/2">
-          <img src="assets/images/use-case-2.jpg" alt="解剖学教育での活用" class="rounded-lg shadow-lg w-full h-auto" loading="lazy" decoding="async">
+          <img src="assets/images/use-case-2.jpg" alt="患者・家族への3Dモデルによる説明" class="rounded-lg shadow-lg w-full h-auto" loading="lazy" decoding="async">
         </div>
         <div class="md:w-1/2">
-          <h3 class="text-2xl font-semibold mb-4">解剖学教育での活用</h3>
-          <p class="text-gray-600 mb-4">
-            複雑な脳血管や顔面骨格の構造を、学生や研修医に立体的に提示。教科書では理解しにくい空間的な位置関係を、直感的に学習できます。
+          <h3 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">患者説明・インフォームドコンセント</h3>
+          <p class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
+            患者本人の3Dモデルを目の前で立体的に提示し、病態・術式・予想される変化を直感的に共有。専門用語に頼らず、視覚的な理解を促せます。
           </p>
-          <p class="text-gray-600">
-            立体画像を即座に投影できるため、効果的な教育環境を実現します。
-          </p>
-        </div>
-      </div>
-
-      <!-- ユースケース3 -->
-      <div class="flex flex-col md:flex-row items-center gap-8 mb-16">
-        <div class="md:w-1/2">
-          <img src="assets/images/use-case-3.jpg" alt="症例検討での活用" class="rounded-lg shadow-lg w-full h-auto" loading="lazy" decoding="async">
-        </div>
-        <div class="md:w-1/2">
-          <h3 class="text-2xl font-semibold mb-4">症例検討での活用</h3>
-          <p class="text-gray-600 mb-4">
-            カンファレンスや症例検討会で、立体画像を共有。手術アプローチや治療方針について、より具体的な議論が可能になります。
-          </p>
-          <p class="text-gray-600">
-            視野角の広い空間再現ディスプレイにより、快適に立体視を体験できます。
+          <p class="text-sm sm:text-base text-gray-600">
+            複数視点の保存機能を使えば、説明用ビューをあらかじめ準備しておくことも可能。説明時間の短縮と納得度の向上に貢献します。
           </p>
         </div>
       </div>
 
-      <!-- ユースケース4 -->
-      <div class="flex flex-col md:flex-row-reverse items-center gap-8 mb-16">
+      <!-- ユースケース3: 医学教育・解剖学習 -->
+      <div class="flex flex-col md:flex-row items-center gap-6 md:gap-8 mb-12 sm:mb-16">
         <div class="md:w-1/2">
-          <img src="assets/images/IMG_5855.JPG" alt="手術室でSARTI-SRDを傍に設置して使用している様子" class="rounded-lg shadow-lg w-full h-auto" loading="lazy" decoding="async">
+          <img src="assets/images/use-case-3.jpg" alt="医学教育・解剖学習" class="rounded-lg shadow-lg w-full h-auto" loading="lazy" decoding="async">
         </div>
         <div class="md:w-1/2">
-          <h3 class="text-2xl font-semibold mb-4">実際の手術現場での活用</h3>
-          <p class="text-gray-600 mb-4">
-            手術室の術野脇に空間再現ディスプレイを設置し、術中にも患者固有の3Dモデルをリアルタイムに参照。複雑な解剖構造の確認や、術中の意思決定支援に活用できます。
+          <h3 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">医学教育・解剖学習</h3>
+          <p class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
+            学生・研修医・コメディカルスタッフへの解剖教育に。複雑な構造を立体的に提示することで、教科書や2D画像だけでは伝わりにくい空間的位置関係を直感的に学習できます。
           </p>
-          <p class="text-gray-600">
-            清潔野を確保したまま、術者・助手・看護師が同時に同一の立体画像を共有可能。チーム全体での状況把握をサポートします。
+          <p class="text-sm sm:text-base text-gray-600">
+            臓器ごとの表示切替・断面表示・計測機能と組み合わせれば、能動的に「触れて学ぶ」教材としても活用可能です。
           </p>
         </div>
       </div>
 
-      <!-- ユースケース5 -->
-      <div class="flex flex-col md:flex-row items-center gap-8">
+      <!-- ユースケース4: カンファレンス・症例検討 -->
+      <div class="flex flex-col md:flex-row-reverse items-center gap-6 md:gap-8 mb-12 sm:mb-16">
         <div class="md:w-1/2">
-          <img src="assets/images/vascular-display.jpg" alt="空間再現ディスプレイに描出された頭頸部の動脈・静脈3D血管像" class="rounded-lg shadow-lg w-full h-auto" loading="lazy" decoding="async">
+          <img src="assets/images/vascular-display.jpg" alt="カンファレンスでの3D症例提示" class="rounded-lg shadow-lg w-full h-auto" loading="lazy" decoding="async">
         </div>
         <div class="md:w-1/2">
-          <h3 class="text-2xl font-semibold mb-4">血管構造の3D可視化</h3>
-          <p class="text-gray-600 mb-4">
-            造影CTから抽出した動脈・静脈を、骨格との位置関係とともに立体表示。複雑に走行する血管網を、裸眼立体視で直感的に把握できます。
+          <h3 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">カンファレンス・症例検討</h3>
+          <p class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
+            複数のスタッフが囲んで立体像を同時共有。骨・血管・神経・腫瘍などを切り替えながら議論することで、手術アプローチや治療方針の検討がより具体的になります。
           </p>
-          <p class="text-gray-600">
-            脳神経外科や頭頸部外科の術前計画において、血管の走行や狭窄部位、骨との距離を立体的に確認することで、より安全なアプローチの検討を支援します。
+          <p class="text-sm sm:text-base text-gray-600">
+            視野角の広い空間再現ディスプレイで、横から覗き込んでもしっかり立体に見える快適な共有体験を実現します。
+          </p>
+        </div>
+      </div>
+
+      <!-- ユースケース5: 術中の解剖確認 -->
+      <div class="flex flex-col md:flex-row items-center gap-6 md:gap-8">
+        <div class="md:w-1/2">
+          <img src="assets/images/IMG_5855.JPG" alt="手術室でSARTI-SRDを術野脇に設置して使用している様子" class="rounded-lg shadow-lg w-full h-auto" loading="lazy" decoding="async">
+        </div>
+        <div class="md:w-1/2">
+          <h3 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">術中の解剖確認</h3>
+          <p class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
+            術野脇に空間再現ディスプレイを設置し、術中にも患者固有の3Dモデルをリアルタイムに参照。複雑な解剖構造の確認や、術中の意思決定支援に活用できます。
+          </p>
+          <p class="text-sm sm:text-base text-gray-600">
+            非接触のハンドジェスチャー操作にも対応するため、清潔野を確保したまま術者自身が視点や表示を切り替え可能。チーム全体での状況把握をサポートします。
           </p>
         </div>
       </div>
@@ -275,40 +329,73 @@
     </div>
   </section>
 
-  <!-- 4. 動作環境・スペックセクション -->
-  <section class="py-20 bg-gray-50" id="specs">
+  <!-- 4. SARTI-3DPad セクション -->
+  <section class="py-16 sm:py-20 bg-gradient-to-br from-slate-50 to-blue-50" id="sarti-3dpad">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">動作環境</h2>
+      <div class="text-center mb-10 sm:mb-12">
+        <span class="inline-block bg-blue-600 text-white text-xs sm:text-sm font-semibold px-3 py-1 rounded-full mb-3 sm:mb-4">同時開発中</span>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">もう一つの選択肢: <span class="whitespace-nowrap">SARTI-3DPad</span></h2>
+        <p class="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto">
+          カンファレンス・教育に最適化された、持ち運べる裸眼立体3Dビューア。
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-10 sm:mb-12 max-w-5xl mx-auto">
+        <figure>
+          <img src="assets/images/IMG_5893.jpg" alt="SARTI-3DPad を横持ちで使用し、頭頸部の動脈・静脈3Dモデルを表示している様子" class="rounded-lg shadow-lg w-full h-auto" loading="lazy" decoding="async">
+          <figcaption class="text-center text-sm text-gray-500 mt-2">横持ち: 広い視野で立体像を観察</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/IMG_5895.JPG" alt="SARTI-3DPad で複数オブジェクトを読み込み、カラー・透過度を調整している様子" class="rounded-lg shadow-lg w-full h-auto" loading="lazy" decoding="async">
+          <figcaption class="text-center text-sm text-gray-500 mt-2">操作UI: SARTI-SRDと共通のレイアウト</figcaption>
+        </figure>
+      </div>
+
+      <div class="max-w-3xl mx-auto text-center">
+        <p class="text-sm sm:text-base md:text-lg text-gray-700 mb-3 sm:mb-4 leading-relaxed">
+          裸眼立体視に対応した <strong>NubiaPad 3D</strong>（ZTE）向けに、SARTI-3DPad を併せて開発中。
+        </p>
+        <p class="text-sm sm:text-base text-gray-700 leading-relaxed">
+          SARTI-SRD と<strong>同じUI・同じ操作感</strong>をそのままに、タブレット端末で<strong>持ち運び可能</strong>。カンファレンスでの症例提示、回診時の患者説明、学生・研修医への教育など、デスクから離れた場面で立体3Dを活用できます。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. 動作環境・スペックセクション -->
+  <section class="py-16 sm:py-20 bg-gray-50" id="specs">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12">動作環境</h2>
       <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
         <table class="w-full">
           <tbody>
             <tr class="border-b">
-              <td class="px-6 py-4 font-semibold bg-blue-50 w-1/3">対応OS</td>
-              <td class="px-6 py-4">Windows 10/11 (64bit)</td>
+              <td class="px-4 sm:px-6 py-3 sm:py-4 font-semibold bg-blue-50 w-1/3">対応OS</td>
+              <td class="px-4 sm:px-6 py-3 sm:py-4">Windows 10/11 (64bit)</td>
             </tr>
             <tr class="border-b">
-              <td class="px-6 py-4 font-semibold bg-blue-50">CPU</td>
-              <td class="px-6 py-4">Intel Core i7-9700K 以上推奨</td>
+              <td class="px-4 sm:px-6 py-3 sm:py-4 font-semibold bg-blue-50">CPU</td>
+              <td class="px-4 sm:px-6 py-3 sm:py-4">Intel Core i7-9700K 以上推奨</td>
             </tr>
             <tr class="border-b">
-              <td class="px-6 py-4 font-semibold bg-blue-50">メモリ</td>
-              <td class="px-6 py-4">16GB以上</td>
+              <td class="px-4 sm:px-6 py-3 sm:py-4 font-semibold bg-blue-50">メモリ</td>
+              <td class="px-4 sm:px-6 py-3 sm:py-4">16GB以上</td>
             </tr>
             <tr class="border-b">
-              <td class="px-6 py-4 font-semibold bg-blue-50">GPU</td>
-              <td class="px-6 py-4">NVIDIA GeForce RTX 3060以上</td>
+              <td class="px-4 sm:px-6 py-3 sm:py-4 font-semibold bg-blue-50">GPU</td>
+              <td class="px-4 sm:px-6 py-3 sm:py-4">NVIDIA GeForce RTX 3060以上</td>
             </tr>
             <tr class="border-b">
-              <td class="px-6 py-4 font-semibold bg-blue-50">対応ディスプレイ</td>
-              <td class="px-6 py-4">Sony Spatial Reality Display (ELF-SR2)</td>
+              <td class="px-4 sm:px-6 py-3 sm:py-4 font-semibold bg-blue-50">対応ディスプレイ</td>
+              <td class="px-4 sm:px-6 py-3 sm:py-4">Sony Spatial Reality Display (ELF-SR2)</td>
             </tr>
             <tr class="border-b">
-              <td class="px-6 py-4 font-semibold bg-blue-50">ストレージ</td>
-              <td class="px-6 py-4">SSD推奨、5GB以上の空き容量</td>
+              <td class="px-4 sm:px-6 py-3 sm:py-4 font-semibold bg-blue-50">ストレージ</td>
+              <td class="px-4 sm:px-6 py-3 sm:py-4">SSD推奨、5GB以上の空き容量</td>
             </tr>
             <tr>
-              <td class="px-6 py-4 font-semibold bg-blue-50">その他</td>
-              <td class="px-6 py-4">ジェスチャーコントロール使用時は別途Webカメラが必要</td>
+              <td class="px-4 sm:px-6 py-3 sm:py-4 font-semibold bg-blue-50">その他</td>
+              <td class="px-4 sm:px-6 py-3 sm:py-4">ジェスチャーコントロール使用時は別途Webカメラが必要</td>
             </tr>
           </tbody>
         </table>
@@ -317,9 +404,9 @@
   </section>
 
   <!-- 5. 購入オプションセクション -->
-  <section class="py-20" id="pricing">
+  <section class="py-16 sm:py-20" id="pricing">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">購入オプション</h2>
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-3 sm:mb-4">購入オプション</h2>
       <p class="text-center text-gray-600 mb-12 text-lg">買い切りライセンスで長期的にご利用いただけます</p>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -436,14 +523,14 @@
   </section>
 
   <!-- 6. FAQ(よくある質問)セクション -->
-  <section class="py-20 bg-gray-50" id="faq">
+  <section class="py-16 sm:py-20 bg-gray-50" id="faq">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">よくある質問</h2>
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12">よくある質問</h2>
       <div class="max-w-3xl mx-auto space-y-4">
 
         <!-- FAQ1 -->
         <div class="bg-white rounded-lg shadow-md">
-          <button class="faq-button w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition">
+          <button class="faq-button w-full px-4 sm:px-6 py-3 sm:py-4 text-left flex justify-between items-center hover:bg-gray-50 transition">
             <span class="font-semibold">ライセンスの種類について</span>
             <svg class="w-6 h-6 transform transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -456,7 +543,7 @@
 
         <!-- FAQ2 -->
         <div class="bg-white rounded-lg shadow-md">
-          <button class="faq-button w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition">
+          <button class="faq-button w-full px-4 sm:px-6 py-3 sm:py-4 text-left flex justify-between items-center hover:bg-gray-50 transition">
             <span class="font-semibold">複数台での使用は可能ですか？</span>
             <svg class="w-6 h-6 transform transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -469,7 +556,7 @@
 
         <!-- FAQ3 -->
         <div class="bg-white rounded-lg shadow-md">
-          <button class="faq-button w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition">
+          <button class="faq-button w-full px-4 sm:px-6 py-3 sm:py-4 text-left flex justify-between items-center hover:bg-gray-50 transition">
             <span class="font-semibold">サポート体制について</span>
             <svg class="w-6 h-6 transform transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -482,7 +569,7 @@
 
         <!-- FAQ4 -->
         <div class="bg-white rounded-lg shadow-md">
-          <button class="faq-button w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition">
+          <button class="faq-button w-full px-4 sm:px-6 py-3 sm:py-4 text-left flex justify-between items-center hover:bg-gray-50 transition">
             <span class="font-semibold">アップデートは無料ですか？</span>
             <svg class="w-6 h-6 transform transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -495,7 +582,7 @@
 
         <!-- FAQ5 -->
         <div class="bg-white rounded-lg shadow-md">
-          <button class="faq-button w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition">
+          <button class="faq-button w-full px-4 sm:px-6 py-3 sm:py-4 text-left flex justify-between items-center hover:bg-gray-50 transition">
             <span class="font-semibold">返品・返金ポリシー</span>
             <svg class="w-6 h-6 transform transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -508,7 +595,7 @@
 
         <!-- FAQ6 -->
         <div class="bg-white rounded-lg shadow-md">
-          <button class="faq-button w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition">
+          <button class="faq-button w-full px-4 sm:px-6 py-3 sm:py-4 text-left flex justify-between items-center hover:bg-gray-50 transition">
             <span class="font-semibold">体験版はありますか？</span>
             <svg class="w-6 h-6 transform transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -521,7 +608,7 @@
 
         <!-- FAQ7 -->
         <div class="bg-white rounded-lg shadow-md">
-          <button class="faq-button w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition">
+          <button class="faq-button w-full px-4 sm:px-6 py-3 sm:py-4 text-left flex justify-between items-center hover:bg-gray-50 transition">
             <span class="font-semibold">医療機器としての認証について</span>
             <svg class="w-6 h-6 transform transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -537,9 +624,9 @@
   </section>
 
   <!-- 7. お問い合わせセクション -->
-  <section class="py-20 bg-white" id="contact">
+  <section class="py-16 sm:py-20 bg-white" id="contact">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">お問い合わせ</h2>
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-3 sm:mb-4">お問い合わせ</h2>
       <p class="text-center text-gray-600 mb-12 text-lg">ご質問・ご相談、体験版のお申し込みはこちらから</p>
 
       <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="max-w-2xl mx-auto bg-gray-50 p-8 rounded-lg shadow-md">
@@ -612,10 +699,10 @@
 
         <!-- 製品情報 -->
         <div>
-          <h3 class="text-lg font-semibold mb-4">SARTI-SRD</h3>
+          <h3 class="text-lg font-semibold mb-4">SARTI-SRD / SARTI-3DPad</h3>
           <p class="text-gray-400 text-sm">
-            空間再現ディスプレイを、臨床現場へ。<br>
-            医療用3D可視化ソリューション
+            立体を、ありのままに、快適に。<br>
+            3Dモデルを扱うすべての診療科へ。
           </p>
         </div>
 
@@ -674,23 +761,39 @@
 
     // 3. ヘッダーの背景変化(スクロール時)
     const header = document.getElementById('header');
+    const headerTextEls = header.querySelectorAll('a, button, .text-2xl, .text-xl');
     window.addEventListener('scroll', () => {
       if (window.scrollY > 100) {
         header.classList.add('bg-white', 'shadow-md');
-        header.classList.remove('bg-transparent');
-        header.querySelectorAll('a, div').forEach(el => {
+        headerTextEls.forEach(el => {
           el.classList.remove('text-white');
           el.classList.add('text-gray-800');
         });
       } else {
         header.classList.remove('bg-white', 'shadow-md');
-        header.classList.add('bg-transparent');
-        header.querySelectorAll('a, div').forEach(el => {
+        headerTextEls.forEach(el => {
           el.classList.remove('text-gray-800');
           el.classList.add('text-white');
         });
       }
     });
+
+    // 4. モバイルメニュートグル
+    const mobileToggle = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (mobileToggle && mobileMenu) {
+      mobileToggle.addEventListener('click', () => {
+        const isOpen = !mobileMenu.classList.contains('hidden');
+        mobileMenu.classList.toggle('hidden');
+        mobileToggle.setAttribute('aria-expanded', String(!isOpen));
+      });
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          mobileToggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
   </script>
 
 </body>
