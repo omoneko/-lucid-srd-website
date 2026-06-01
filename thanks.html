@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせを受け付けました - SARTI-SRD</title>
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'sans': ['Noto Sans JP', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans text-gray-800 leading-relaxed bg-gray-50 min-h-screen flex flex-col">
+
+  <!-- ヘッダー -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-xl sm:text-2xl font-bold text-blue-900">
+        SARTI-SRD
+      </a>
+      <nav class="hidden md:flex space-x-6 text-gray-700">
+        <a href="index.html" class="hover:text-blue-600 transition">トップページ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- メインコンテンツ -->
+  <main class="flex-1 container mx-auto px-4 py-12 sm:py-20 max-w-2xl">
+    <div class="bg-white rounded-lg shadow-md p-8 sm:p-12 text-center">
+      <!-- チェックアイコン -->
+      <div class="mx-auto w-16 h-16 sm:w-20 sm:h-20 bg-green-100 rounded-full flex items-center justify-center mb-6">
+        <svg class="w-10 h-10 sm:w-12 sm:h-12 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+        </svg>
+      </div>
+
+      <h1 class="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">お問い合わせを<br class="sm:hidden">受け付けました</h1>
+      <p class="text-gray-600 mb-6 sm:mb-8 text-sm sm:text-base leading-relaxed">
+        この度はお問い合わせいただき、誠にありがとうございます。<br>
+        内容を確認の上、担当者より<strong>3営業日以内</strong>にご連絡させていただきます。
+      </p>
+
+      <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg mb-6 sm:mb-8 text-left">
+        <p class="text-sm text-gray-700">
+          <strong>📩 ご連絡が届かない場合</strong><br>
+          迷惑メールフォルダにメールが振り分けられている可能性があります。あわせてご確認ください。
+        </p>
+      </div>
+
+      <a href="index.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 py-3 rounded-lg font-semibold transition shadow-md">
+        トップページに戻る
+      </a>
+    </div>
+  </main>
+
+  <!-- フッター -->
+  <footer class="bg-gray-900 text-white py-6 sm:py-8">
+    <div class="container mx-auto px-4 text-center">
+      <p class="text-gray-400 text-sm">&copy; 2025 SART Soft. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
