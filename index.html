@@ -57,8 +57,12 @@
     "softwareRequirements": "Sony Spatial Reality Display (ELF-SR2)",
     "offers": {
       "@type": "Offer",
-      "price": "400000",
-      "priceCurrency": "JPY",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "price": "400000",
+        "priceCurrency": "JPY",
+        "valueAddedTaxIncluded": false
+      },
       "availability": "https://schema.org/InStock"
     },
     "provider": {
@@ -365,7 +369,10 @@
   <!-- 4. 動作環境・スペックセクション -->
   <section class="py-16 sm:py-20 bg-gray-50" id="specs">
     <div class="container mx-auto px-4">
-      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12">動作環境</h2>
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-3 sm:mb-4">動作環境</h2>
+      <p class="text-center text-gray-600 mb-6 sm:mb-8 text-sm sm:text-base max-w-2xl mx-auto">
+        対応ハードウェア (Sony Spatial Reality Display / NubiaPad 3D) は<strong>本ソフトウェアに含まれず、別途ご購入</strong>いただく必要があります。
+      </p>
       <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
         <table class="w-full">
           <tbody>
@@ -407,117 +414,192 @@
   <section class="py-16 sm:py-20" id="pricing">
     <div class="container mx-auto px-4">
       <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-3 sm:mb-4">購入オプション</h2>
-      <p class="text-center text-gray-600 mb-12 text-lg">買い切りライセンスで長期的にご利用いただけます</p>
+      <p class="text-center text-gray-600 mb-8 sm:mb-10 text-base sm:text-lg">買い切りライセンスで長期的にご利用いただけます</p>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-
-        <!-- ダウンロード版 -->
-        <div class="border-2 border-blue-500 rounded-lg p-8 hover:shadow-xl transition relative">
-          <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm">
-            おすすめ
-          </div>
-          <h3 class="text-2xl font-bold mb-4">ダウンロード版</h3>
-          <div class="text-4xl font-bold text-blue-600 mb-2">¥400,000</div>
-          <div class="text-sm text-gray-600 mb-6">(税込・買い切り)</div>
-
-          <div class="bg-blue-50 p-3 rounded-lg mb-6">
-            <p class="text-sm font-semibold text-blue-800">
-              ✨ ジェスチャーコントロールアプリ同梱<br>
-              <span class="text-xs">(¥20,000相当)</span>
-            </p>
-          </div>
-
-          <ul class="space-y-3 mb-8">
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span>購入後即ダウンロード可能</span>
-            </li>
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span>1年間の導入支援・サポート付き</span>
-            </li>
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span>無料アップデート対応</span>
-            </li>
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span>フリーハンド操作が可能</span>
-            </li>
-          </ul>
-          <a href="#contact" class="block w-full bg-blue-600 text-white text-center py-3 rounded-lg hover:bg-blue-700 transition">
-            お問い合わせ
-          </a>
-        </div>
-
-        <!-- USB版 -->
-        <div class="border-2 border-blue-200 rounded-lg p-8 hover:border-blue-500 hover:shadow-xl transition">
-          <h3 class="text-2xl font-bold mb-4">USB版</h3>
-          <div class="text-4xl font-bold text-blue-600 mb-2">¥400,000</div>
-          <div class="text-sm text-gray-600 mb-6">(税込・買い切り)</div>
-
-          <div class="h-14 mb-6"></div>
-
-          <ul class="space-y-3 mb-8">
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span>プロダクトキー入りUSBで配送</span>
-            </li>
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span>1年間の導入支援・サポート付き</span>
-            </li>
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span>無料アップデート対応</span>
-            </li>
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span>物理メディアでの保管が可能</span>
-            </li>
-          </ul>
-          <a href="#contact" class="block w-full bg-blue-600 text-white text-center py-3 rounded-lg hover:bg-blue-700 transition">
-            お問い合わせ
-          </a>
-        </div>
-
-      </div>
-
-      <!-- ライセンスオプション -->
-      <div class="mt-12 max-w-4xl mx-auto bg-gray-50 p-6 rounded-lg">
-        <h3 class="text-xl font-semibold mb-4 text-center">複数台でのご利用をお考えの方へ</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="bg-white p-4 rounded-lg">
-            <h4 class="font-semibold mb-2">シングルライセンス</h4>
-            <p class="text-2xl font-bold text-blue-600 mb-2">¥400,000</p>
-            <p class="text-sm text-gray-600">PC 1台につき1ライセンス</p>
-          </div>
-          <div class="bg-white p-4 rounded-lg">
-            <h4 class="font-semibold mb-2">サイトライセンス</h4>
-            <p class="text-2xl font-bold text-blue-600 mb-2">¥1,200,000</p>
-            <p class="text-sm text-gray-600">同一組織内で最大5台まで</p>
+      <!-- ハードウェア別途購入の注意喚起 -->
+      <div class="max-w-4xl mx-auto mb-10 sm:mb-12 bg-yellow-50 border-l-4 border-yellow-500 p-4 sm:p-5 rounded-r-lg">
+        <div class="flex items-start gap-3">
+          <svg class="w-5 h-5 sm:w-6 sm:h-6 text-yellow-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+          </svg>
+          <div class="text-sm sm:text-base flex-1">
+            <p class="font-semibold text-yellow-900 mb-2">ご購入前にご確認ください</p>
+            <p class="text-gray-800 mb-2">表示価格はすべて<strong>税別</strong>です。本ソフトウェアのみのご提供となり、ご利用にあたっては対応ハードウェアを<strong>別途ご購入</strong>いただく必要があります。</p>
+            <ul class="list-disc list-inside text-gray-700 space-y-0.5">
+              <li><strong>SARTI-SRD</strong> ご利用には <strong>Sony Spatial Reality Display (ELF-SR2)</strong> が別途必要</li>
+              <li><strong>SARTI-3DPad</strong> ご利用には <strong>NubiaPad 3D（ZTE）</strong> が別途必要</li>
+            </ul>
           </div>
         </div>
       </div>
 
-      <p class="text-center text-sm text-gray-600 mt-8">
-        ※ご購入前に<a href="terms.html" class="text-blue-600 hover:underline">利用規約</a>をご確認ください
+      <!-- SARTI-SRD 価格グループ -->
+      <div class="max-w-4xl mx-auto mb-12 sm:mb-16">
+        <div class="text-center mb-6 sm:mb-8">
+          <h3 class="text-xl sm:text-2xl md:text-3xl font-bold mb-2">SARTI-SRD</h3>
+          <p class="text-sm sm:text-base text-gray-600">Sony Spatial Reality Display (ELF-SR2) 向け</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+
+          <!-- ダウンロード版 -->
+          <div class="border-2 border-blue-500 rounded-lg p-6 sm:p-8 hover:shadow-xl transition relative">
+            <div class="absolute top-3 right-3 sm:top-4 sm:right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs sm:text-sm">
+              おすすめ
+            </div>
+            <h4 class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">ダウンロード版</h4>
+            <div class="text-3xl sm:text-4xl font-bold text-blue-600 mb-2">¥400,000</div>
+            <div class="text-xs sm:text-sm text-gray-600 mb-4 sm:mb-6">(税別・買い切り)</div>
+
+            <div class="bg-blue-50 p-3 rounded-lg mb-4 sm:mb-6">
+              <p class="text-xs sm:text-sm font-semibold text-blue-800">
+                ✨ ジェスチャーコントロールアプリ同梱<br>
+                <span class="text-xs">(¥20,000相当)</span>
+              </p>
+            </div>
+
+            <ul class="space-y-2 sm:space-y-3 mb-6 sm:mb-8 text-sm sm:text-base">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span>購入後即ダウンロード可能</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span>1年間の導入支援・サポート付き</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span>無料アップデート対応</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span>ハンドジェスチャー操作が可能</span>
+              </li>
+            </ul>
+            <a href="#contact" class="block w-full bg-blue-600 text-white text-center py-3 rounded-lg hover:bg-blue-700 transition">
+              お問い合わせ
+            </a>
+          </div>
+
+          <!-- USB版 -->
+          <div class="border-2 border-blue-200 rounded-lg p-6 sm:p-8 hover:border-blue-500 hover:shadow-xl transition">
+            <h4 class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">USB版</h4>
+            <div class="text-3xl sm:text-4xl font-bold text-blue-600 mb-2">¥400,000</div>
+            <div class="text-xs sm:text-sm text-gray-600 mb-4 sm:mb-6">(税別・買い切り)</div>
+
+            <div class="h-14 mb-4 sm:mb-6"></div>
+
+            <ul class="space-y-2 sm:space-y-3 mb-6 sm:mb-8 text-sm sm:text-base">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span>プロダクトキー入りUSBで配送</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span>1年間の導入支援・サポート付き</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span>無料アップデート対応</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span>物理メディアでの保管が可能</span>
+              </li>
+            </ul>
+            <a href="#contact" class="block w-full bg-blue-600 text-white text-center py-3 rounded-lg hover:bg-blue-700 transition">
+              お問い合わせ
+            </a>
+          </div>
+
+        </div>
+
+        <!-- ライセンスオプション (SARTI-SRD) -->
+        <div class="mt-8 sm:mt-12 bg-gray-50 p-4 sm:p-6 rounded-lg">
+          <h4 class="text-base sm:text-xl font-semibold mb-3 sm:mb-4 text-center">複数台でのご利用をお考えの方へ</h4>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+            <div class="bg-white p-3 sm:p-4 rounded-lg">
+              <h5 class="font-semibold mb-1 sm:mb-2 text-sm sm:text-base">シングルライセンス</h5>
+              <p class="text-xl sm:text-2xl font-bold text-blue-600 mb-1 sm:mb-2">¥400,000<span class="text-sm font-normal text-gray-600 ml-1">(税別)</span></p>
+              <p class="text-xs sm:text-sm text-gray-600">PC 1台につき1ライセンス</p>
+            </div>
+            <div class="bg-white p-3 sm:p-4 rounded-lg">
+              <h5 class="font-semibold mb-1 sm:mb-2 text-sm sm:text-base">サイトライセンス</h5>
+              <p class="text-xl sm:text-2xl font-bold text-blue-600 mb-1 sm:mb-2">¥1,200,000<span class="text-sm font-normal text-gray-600 ml-1">(税別)</span></p>
+              <p class="text-xs sm:text-sm text-gray-600">同一組織内で最大5台まで</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SARTI-3DPad 価格グループ -->
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-6 sm:mb-8">
+          <h3 class="text-xl sm:text-2xl md:text-3xl font-bold mb-2">
+            SARTI-3DPad
+            <span class="inline-block ml-2 align-middle text-xs font-semibold bg-blue-600 text-white px-2 py-0.5 rounded-full">同時開発中</span>
+          </h3>
+          <p class="text-sm sm:text-base text-gray-600">NubiaPad 3D（ZTE）向け</p>
+        </div>
+
+        <div class="max-w-md mx-auto">
+          <div class="border-2 border-blue-200 rounded-lg p-6 sm:p-8 hover:border-blue-500 hover:shadow-xl transition">
+            <h4 class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">SARTI-3DPad アプリ</h4>
+            <div class="text-3xl sm:text-4xl font-bold text-blue-600 mb-2">¥50,000</div>
+            <div class="text-xs sm:text-sm text-gray-600 mb-4 sm:mb-6">(税別・買い切り)</div>
+
+            <ul class="space-y-2 sm:space-y-3 mb-6 sm:mb-8 text-sm sm:text-base">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span>SARTI-SRDと同じUI・同じ操作感</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span>STL / OBJ / PLY / DICOM 対応</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span>カンファレンス・教育・回診で持ち運び活用</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span>1年間の導入支援・サポート付き</span>
+              </li>
+            </ul>
+            <a href="#contact" class="block w-full bg-blue-600 text-white text-center py-3 rounded-lg hover:bg-blue-700 transition">
+              お問い合わせ
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center text-sm text-gray-600 mt-8 sm:mt-12">
+        ※ 価格はすべて税別。対応ハードウェアは別途ご購入が必要です。<br>
+        ※ ご購入前に<a href="terms.html" class="text-blue-600 hover:underline">利用規約</a>をご確認ください
       </p>
     </div>
   </section>
@@ -537,7 +619,7 @@
             </svg>
           </button>
           <div class="faq-content px-6 pb-4 hidden">
-            <p class="text-gray-600">シングルライセンス(PC1台・¥400,000)とサイトライセンス(同一組織内最大5台・¥1,200,000)をご用意しています。</p>
+            <p class="text-gray-600">SARTI-SRDはシングルライセンス(PC1台・¥400,000 税別)とサイトライセンス(同一組織内最大5台・¥1,200,000 税別)をご用意。SARTI-3DPadは¥50,000 税別の単一プランです。いずれもソフトウェアのみの価格で、対応ハードウェア (Sony Spatial Reality Display / NubiaPad 3D) は別途ご購入いただく必要があります。</p>
           </div>
         </div>
 
