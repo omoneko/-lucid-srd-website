@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- 基本SEO -->
-  <title>SARTI-SRD - Sony Spatial Reality Display対応 医療用3D可視化アプリケーション</title>
-  <meta name="description" content="立体を、ありのままに、快適に。Sony Spatial Reality Display で実現する医療用3D可視化ソリューション。STL/OBJ/PLY/DICOM に対応し、術前計画、術中の解剖確認、患者説明、教育、カンファレンスまで、3Dモデルを扱うあらゆる診療科でご活用いただけます。NubiaPad 3D 用の SARTI-3DPad も併せて開発中。">
-  <meta name="keywords" content="SARTI-SRD,SARTI-3DPad,空間再現ディスプレイ,Sony Spatial Reality Display,ELF-SR2,NubiaPad 3D,医療3D,DICOM,STL,OBJ,PLY,術前計画,術中ナビゲーション,患者説明,医学教育,カンファレンス,3D可視化">
+  <title>SARTI-SRD / SARTI-3DPad | SART Soft - 医療用3D可視化ソフトウェア</title>
+  <meta name="description" content="SART Soft (サートソフト) が開発する SARTI シリーズ。SARTI-SRD は Sony Spatial Reality Display (ELF-SR2) 向けの医療用3D可視化ソフトウェアで、STL/OBJ/PLY/DICOM に対応。SARTI-3DPad は NubiaPad 3D 向け (STL/OBJ/PLY 対応) を併せて開発中。術前計画、術中の解剖確認、患者説明、教育、カンファレンスまで、3Dモデルを扱うあらゆる診療科でご活用いただけます。">
+  <meta name="keywords" content="sartsoft,SART Soft,サートソフト,sarti,SARTI,SARTI シリーズ,sarti-srd,SARTI-SRD,sarti-3dpad,SARTI-3DPad,空間再現ディスプレイ,Sony Spatial Reality Display,ELF-SR2,NubiaPad 3D,医療3D,DICOM,STL,OBJ,PLY,術前計画,術中ナビゲーション,患者説明,医学教育,カンファレンス,3D可視化,裸眼立体視">
+  <meta name="author" content="SART Soft">
+  <link rel="canonical" href="https://sartsoft.com/">
 
   <!-- OGP (SNSシェア用) -->
   <meta property="og:title" content="SARTI-SRD - 医療用3D可視化アプリケーション">
@@ -49,12 +51,49 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://sartsoft.com/#organization",
+    "name": "SART Soft",
+    "alternateName": ["SARTSoft", "サートソフト"],
+    "url": "https://sartsoft.com/",
+    "logo": "https://sartsoft.com/assets/images/logo.png",
+    "description": "医療用3D可視化ソフトウェア SARTI シリーズ (SARTI-SRD, SARTI-3DPad) の開発元。",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "鹿田町2-5-1",
+      "addressLocality": "岡山市北区",
+      "addressRegion": "岡山県",
+      "postalCode": "700-8558",
+      "addressCountry": "JP"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://sartsoft.com/#website",
+    "url": "https://sartsoft.com/",
+    "name": "SART Soft - SARTI-SRD / SARTI-3DPad",
+    "alternateName": ["SARTI シリーズ", "SARTI-SRD", "SARTI-3DPad"],
+    "description": "SART Soft が開発する医療用3D可視化ソフトウェア SARTI シリーズ公式サイト。",
+    "publisher": { "@id": "https://sartsoft.com/#organization" },
+    "inLanguage": "ja"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
     "@type": "SoftwareApplication",
+    "@id": "https://sartsoft.com/#sarti-srd",
     "name": "SARTI-SRD",
-    "description": "Sony Spatial Reality Display 向けの医療用3D可視化アプリケーション。STL/OBJ/PLY/DICOMに対応し、術前計画、術中の解剖確認、患者説明、医学教育、カンファレンスなど3Dモデルを扱うあらゆる場面で活用可能。",
+    "alternateName": "サーティエスアールディ",
+    "description": "Sony Spatial Reality Display (ELF-SR2) 向けの医療用3D可視化アプリケーション。STL/OBJ/PLY/DICOMに対応し、術前計画、術中の解剖確認、患者説明、医学教育、カンファレンスなど3Dモデルを扱うあらゆる場面で活用可能。",
     "applicationCategory": "MedicalApplication",
     "operatingSystem": "Windows 10, Windows 11",
     "softwareRequirements": "Sony Spatial Reality Display (ELF-SR2)",
+    "brand": { "@id": "https://sartsoft.com/#organization" },
+    "publisher": { "@id": "https://sartsoft.com/#organization" },
     "offers": {
       "@type": "Offer",
       "priceSpecification": {
@@ -64,18 +103,31 @@
         "valueAddedTaxIncluded": false
       },
       "availability": "https://schema.org/InStock"
-    },
-    "provider": {
-      "@type": "Organization",
-      "name": "SART Soft",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "鹿田町2-5-1",
-        "addressLocality": "岡山市北区",
-        "addressRegion": "岡山県",
-        "postalCode": "700-8558",
-        "addressCountry": "JP"
-      }
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "@id": "https://sartsoft.com/#sarti-3dpad",
+    "name": "SARTI-3DPad",
+    "alternateName": "サーティスリーディーパッド",
+    "description": "ZTE NubiaPad 3D 向けの医療用3D可視化アプリケーション。SARTI-SRDと同じ操作感で、STL/OBJ/PLYに対応。カンファレンス・教育・回診向けに持ち運び可能。",
+    "applicationCategory": "MedicalApplication",
+    "operatingSystem": "Android",
+    "softwareRequirements": "ZTE NubiaPad 3D",
+    "brand": { "@id": "https://sartsoft.com/#organization" },
+    "publisher": { "@id": "https://sartsoft.com/#organization" },
+    "offers": {
+      "@type": "Offer",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "price": "50000",
+        "priceCurrency": "JPY",
+        "valueAddedTaxIncluded": false
+      },
+      "availability": "https://schema.org/PreOrder"
     }
   }
   </script>
@@ -410,7 +462,7 @@
         </figure>
         <figure>
           <img src="assets/images/IMG_5891.jpg" alt="SARTI-3DPad で brain.ply の3Dモデルを表示している様子" class="rounded-lg shadow-lg w-full h-auto" loading="lazy" decoding="async">
-          <figcaption class="text-center text-sm text-gray-500 mt-2">STL / OBJ / PLY / DICOM に対応</figcaption>
+          <figcaption class="text-center text-sm text-gray-500 mt-2">STL / OBJ / PLY に対応</figcaption>
         </figure>
       </div>
 
@@ -634,7 +686,7 @@
                 <svg class="w-5 h-5 sm:w-6 sm:h-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <span>STL / OBJ / PLY / DICOM 対応</span>
+                <span>STL / OBJ / PLY 対応 (DICOMは非対応)</span>
               </li>
               <li class="flex items-start">
                 <svg class="w-5 h-5 sm:w-6 sm:h-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
